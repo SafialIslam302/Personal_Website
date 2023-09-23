@@ -647,13 +647,13 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 2.5rem;
   --bs-gutter-y: 0;
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 50px;
 }
 
 @media (min-width: 576px) {
@@ -7682,7 +7682,7 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .mb-auto {
@@ -10885,7 +10885,7 @@ p.lead {
   padding-right: 1rem;
 }
 #sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 800;
+  font-weight: 2000px;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
@@ -10903,7 +10903,7 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 19rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
@@ -10956,6 +10956,64 @@ p.lead {
 .dev-icons {
   font-size: 3rem;
 }
+
+
+
+
+/* Add this CSS for the ordered list in the journal section */
+.resume-section#journal ol {
+    padding-left: 0;
+    font-size: 20px;
+    /* Remove list-style: none; to display numbers */
+}
+
+.resume-section#journal li {
+    margin-bottom: 0px;
+}
+
+.resume-section#journal .subheading {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.resume-section#journal .text-primary {
+    color: #007BFF;
+}
+
+/* Style for publication date */
+.resume-section#journal .text-primary::before {
+    content: "Published: ";
+    font-weight: normal;
+}
+
+
+/* Add this CSS for the ordered list in the journal section */
+.resume-section#conference ol {
+    padding-left: 0;
+    font-size: 20px;
+    /* Remove list-style: none; to display numbers */
+}
+
+.resume-section#conference li {
+    margin-bottom: 0px;
+}
+
+.resume-section#conference .subheading {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.resume-section#conference .text-primary {
+    color: #007BFF;
+}
+
+/* Style for publication date */
+.resume-section#conference .text-primary::before {
+    content: "Published: ";
+    font-weight: normal;
+}
+
+
 
 section.resume-section {
   display: flex;
