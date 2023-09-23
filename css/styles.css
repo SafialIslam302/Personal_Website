@@ -7335,6 +7335,10 @@ textarea.form-control-lg {
   min-height: 100vh !important;
 }
 
+.subheading a {
+    color: #333333; /* Set the color to black */
+}
+
 .flex-fill {
   flex: 1 1 auto !important;
 }
@@ -10977,7 +10981,7 @@ p.lead {
 }
 
 .resume-section#journal .text-primary {
-    color: #007BFF;
+    color: #36454F;
 }
 
 /* Style for publication date */
@@ -11004,7 +11008,7 @@ p.lead {
 }
 
 .resume-section#conference .text-primary {
-    color: #007BFF;
+    color: #36454F;
 }
 
 /* Style for publication date */
@@ -11040,4 +11044,44 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+/* Style the dev-icons list */
+.dev-icons {
+    list-style-type: none;
+    display: flex;
+    justify-content: left; /* Optional: center the icons and text horizontally */
+    align-items: flex-start; /* Align items at the top */
+}
+
+/* Style each list item */
+.dev-icons p {
+    text-align: left; /* Center text horizontally */
+    margin-right: 20px;
+    padding-right: 30px;
+}
+
+/* Style the icons */
+.dev-icons i {
+    font-size: 16px;
+}
+
+/* Style the text */
+.dev-icons span {
+    display: block; /* Display text as block (stacked) */
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* CSS for the Skills section */
+.skills-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+    gap: 20px; /* Adjust the gap between columns */
+}
+
+.skills-column {
+    flex: 1;
+    max-width: calc(50% - 10px); /* Set the column width as needed */
 }
