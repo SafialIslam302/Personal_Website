@@ -259,10 +259,6 @@ sup {
   top: -0.5em;
 }
 
-a {
-  color: var(--bs-link-color);
-  text-decoration: underline;
-}
 a:hover {
   color: var(--bs-link-hover-color);
 }
@@ -3143,7 +3139,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: transparent;
   --bs-btn-box-shadow: none;
   --bs-btn-focus-shadow-rgb: 161, 79, 48;
-  text-decoration: underline;
 }
 .btn-link:focus-visible {
   color: var(--bs-btn-color);
@@ -7335,7 +7330,7 @@ textarea.form-control-lg {
   min-height: 100vh !important;
 }
 
-.subheading a {
+.flex-grow-1 a {
     color: #333333; /* Set the color to black */
 }
 
@@ -7689,6 +7684,10 @@ textarea.form-control-lg {
   margin-bottom: 1.5rem !important;
 }
 
+.subheading a.black-link {
+    color: #6c757d; /* Set the desired text color (black) */
+}
+
 .mb-auto {
   margin-bottom: auto !important;
 }
@@ -8015,10 +8014,6 @@ textarea.form-control-lg {
 
 .text-decoration-none {
   text-decoration: none !important;
-}
-
-.text-decoration-underline {
-  text-decoration: underline !important;
 }
 
 .text-decoration-line-through {
@@ -10866,6 +10861,10 @@ h5,
 h6,
 .h6 {
   text-transform: uppercase;
+}
+
+.resume-section a {
+    text-decoration: none;
 }
 
 h1, .h1 {
