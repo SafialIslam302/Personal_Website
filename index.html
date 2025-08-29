@@ -1,367 +1,507 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Resume - Safial Islam Ayon</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content="Research portfolio of Safial Islam Ayon"/>
+        <meta name="author" content="Safial Islam Ayon"/>
+        <title>Portfolio - Safial Islam Ayon</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+
+        <!-- Fonts & Icons -->
+        <script src="https://use.fontawesome.com/releases/v6.5.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+        <!-- Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <!-- Custom styles -->
+        <link href="css/styles.css" rel="stylesheet"/>
+        <link href="css/theme.css" rel="stylesheet"/>
     </head>
+
     <body id="page-top">
-        <!-- Navigation-->
+        <!-- Sidebar Navigation - Fixed order -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Safial Islam Ayon</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+                <span class="d-none d-lg-block">
+                  <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Profile"/>
+                </span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#professional">Professional History</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#miscellaneous">Miscellaneous Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#journal">Publications - Journal</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#conference">Publications - Conference</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#peer-review">Peer Review</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="https://drive.google.com/file/d/1uKAGhGVYkGAx9sGiOsrW3W-tOXNM6Oml/view?usp=sharing" target="_blank">Resume</a>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    <li class="nav-item mt-2"><a class="btn btn-sm btn-outline-light w-100" href="#resume"><i class="far fa-file-alt me-2"></i>Resume</a></li>
+                    <li class="nav-item mt-2">
+                        <button class="btn btn-sm btn-outline-light w-100" id="themeToggle" type="button"
+                                aria-label="Toggle dark mode">
+                            <i class="fas fa-moon me-2"></i><span class="toggle-text">Dark</span>
+                        </button>
                     </li>
                 </ul>
             </div>
         </nav>
-        <!-- Page Content-->
+
+        <!-- Page Content -->
         <div class="container-fluid p-0">
-            <!-- About-->
+            <!-- About -->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Safial Islam
-                        <span class="text-primary">Ayon</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                            <b>Address:</b> Lindenstraße 41, 14467 Potsdam, Germany <br> <b>Mobile:</b> 01747785652 <br>
-                            <b><a class="black-link" href="mailto:safialislam302@gmail.com">Email:</b> safialislam302@gmail.com; ayon@uni-potsdam.de</a> <br> <b>Birth Day:</b> 14.11.1996 . <b>Birth Place:</b> Khulna, Bangladesh.
-                    </div>
-                    <p class="lead mb-5">Experienced professional with over 3 years' work experience and a strong publication background. Seeking research-focused opportunities to further develop a career dedicated to advancing knowledge and making impactful contributions in the field.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/safial-islam-ayon-b97760120/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/SafialIslam302"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://orcid.org/0000-0002-0970-0455"><i class="fab fa-orcid"></i></a>
-                        <a class="social-icon" href="https://scholar.google.com/citations?user=PUyJ1ZQAAAAJ&hl=en"><i class="fab fa-google"></i></a>
+                    <h1 class="mb-0">Safial Islam Ayon</h1>
+                    <div class="card project-card p-3 mb-3">
+                        <p class="lead mb-3">I am a researcher focused on reproducibility, data-centric AI, and scientific
+                            software.</p>
+                        <div class="chips mb-3">
+                            <span class="chip">Reproducible Research</span>
+                            <span class="chip">Data-Centric AI</span>
+                            <span class="chip">Scientific Workflows</span>
+                            <span class="chip">Research Software</span>
+                            <span class="chip">Optimization</span>
+                            <span class="chip">NLP</span>
+                        </div>
+                        <ul class="list-unstyled mb-0 small">
+                            <li><b>Address:</b> Caputher Heuweg 12, 14478 Potsdam, Germany</li>
+                            <li><b>Mobile:</b> 01747785652</li>
+                            <li><b>Email:</b> safialislam302@gmail.com; safial.islam.ayon@uni-potsdam.de</li>
+                            <li><b>Profiles:</b>
+                                <a href="https://scholar.google.com/citations?user=PUyJ1ZQAAAAJ&hl=en" target="_blank"
+                                   rel="noopener noreferrer">Google Scholar</a> ·
+                                <a href="https://orcid.org/0000-0002-0970-0455" target="_blank"
+                                   rel="noopener noreferrer">ORCiD</a> ·
+                                <a href="https://github.com/SafialIslam302" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                ·
+                                <a href="https://www.linkedin.com/in/safial-islam-ayon-b97760120/" target="_blank"
+                                   rel="noopener noreferrer">LinkedIn</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
-            <!-- Education-->
+            <hr class="m-0"/>
+
+            <!-- Education -->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Potsdam</h3>
-                            <div class="subheading mb-3">Master of Science in Data Science</div>
-                            <div>Deals with methods for the automated acquisition of knowledge, insights, forecast, risk, and action models from data.</div>
-                            <div><b>Thesis:</b> Automating investigations on the reproducibility of scientific publications based on their digital artifacts. <a href="https://drive.google.com/file/d/1RwRQhWQLh1oUYJki1a_yBGTY_sLacz9G/view?usp=drive_link" target="_blank"> [Link] </a> </div>
+                    <h2 class="mb-4">Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">Oct 2021 – Jan 2024</div>
+                            <div class="timeline-content">
+                                <h3 class="mb-1">University of Potsdam</h3>
+                                <div class="subheading mb-1">M.Sc. in Data Science</div>
+                                <div class="mb-2"><b>CGPA:</b> 2.1 (German system, equivalent to "Good")</div>
+                                <div><b>Thesis:</b> Automating Investigations on the Reproducibility of Scientific Publications Based on their Digital Artifacts. <a
+                                            href="https://drive.google.com/file/d/1RwRQhWQLh1oUYJki1a_yBGTY_sLacz9G/view?usp=drive_link"
+                                            target="_blank" rel="noopener noreferrer">[Link]</a></div>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2021 - January 2024</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Khulna University of Engineering and Technology, Bangladesh</h3>
-                            <div class="subheading mb-3">Bachelor of Science in Computer Science and Engineering</div>
-                            <div><b>Major areas:</b> Machine Learning, Natural Language Processing, Cloud Computing, Soft Computing, Computer Vision and Image Processing, Data Mining and Computer Networks.</div>
-                            <div><b>Thesis:</b> Discrete Spider Monkey Optimization for Traveling Salesman Problem. <a href="https://drive.google.com/file/d/13xrLyWXJH0pe6_D-yeL3l4VtnUBU5hiz/view?usp=drive_link" target="_blank"> [Link] </a></div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Dec 2014 – Feb 2019</div>
+                            <div class="timeline-content">
+                                <h3 class="mb-1">Khulna University of Engineering and Technology (KUET)</h3>
+                                <div class="subheading mb-1">B.Sc. in Computer Science and Engineering</div>
+                                <div class="mb-2"><b>CGPA:</b> 3.66 / 4.00</div>
+                                <div><b>Thesis:</b> Modified Spider Monkey Optimization for Traveling Salesman Problem. <a
+                                        href="https://drive.google.com/file/d/13xrLyWXJH0pe6_D-yeL3l4VtnUBU5hiz/view?usp=drive_link"
+                                        target="_blank" rel="noopener noreferrer">[Link]</a></div>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2014 - February 2019</span></div>
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
-            <!-- Professional History -->
-            <section class="resume-section" id="professional">
+            <hr class="m-0"/>
+
+            <!-- Experience - Redesigned as compact grid -->
+            <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Professional Summary</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Student Research Assistant</h3>
-                            <div class="subheading mb-3">SFB 1294 - Z03 Information Infrastructure for Data Assimilation, University of Potsdam</div>
-                            <p>
-                                <ul>
-                                    <li>Emphasized reproducibility of scientific papers.</li>
-                                    <li>Identified and resolved code bugs.</li>
-                                    <li>Investigation of Data, Code and Documentation.</li>
+                    <h2 class="mb-4">Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">Mar 2024 – Present</div>
+                            <div class="timeline-content">
+                                <h3 class="mb-1">Research Associate</h3>
+                                <div class="subheading mb-1">NFDIxCS · University of Potsdam, Potsdam, Germany</div>
+                                <ul class="mb-2">
+                                    <li>Develop services and workflows to package complex research artifacts into reusable data objects</li>
+                                    <li>Advance FAIR-by-design practices for CS sub-domains and improve research reproducibility</li>
                                 </ul>
-                            </p>
+                                <div class="tags"><span class="tag">Research Data Management</span><span
+                                    class="tag">Containers</span><span class="tag">FAIR</span></div>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">February 2022 - February 2024</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Lecturer</h3>
-                            <div class="subheading mb-3">Dept. of Computer Science and Engineering, Green University of Bangladesh, Bangladesh</div>
-                            <p>
-                                <ul>
-                                    <li>Delivering lectures and conducting interactive classroom sessions.</li>
-                                    <li>Creating course materials such as syllabi, lesson plans, and assessments.</li>
-                                    <li>Providing student guidance, support, and mentoring them.</li>
-                                    <li>Collaborating with colleagues to improve curriculum development.</li>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Feb 2022 – Feb 2024</div>
+                            <div class="timeline-content">
+                                <h3 class="mb-1">Student Research Assistant</h3>
+                                <div class="subheading mb-1">SFB 1294 - Z03, University of Potsdam, Potsdam, Germany</div>
+                                <ul class="mb-2">
+                                    <li>Emphasized reproducibility of scientific papers</li>
+                                    <li>Identified and resolved code bugs</li>
+                                    <li>Investigated data, code, and documentation</li>
                                 </ul>
-                            </p>
+                                <div class="tags"><span class="tag">Reproducibility</span><span class="tag">Code Analysis</span>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">January 2020 - June 2021</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Lecturer</h3>
-                            <div class="subheading mb-3">Dept. of Computer Science and Engineering, Bangladesh Army University of Engineering & Technology, Bangladesh</div>
-                            <p>
-                                <ul>
-                                    <li>Delivering lectures and facilitating interactive classroom sessions.</li>
-                                    <li>Active involvement in departmental initiatives through faculty meetings.</li>
-                                    <li>Engaging in professional development activities to enhance teaching skills.</li>
+                         <div class="timeline-item">
+                            <div class="timeline-date">Jan 2020 – Jun 2021</div>
+                            <div class="timeline-content">
+                                <h3 class="mb-1">Lecturer</h3>
+                                <div class="subheading mb-1">Green University of Bangladesh, Bangladesh</div>
+                                 <ul class="mb-2">
+                                    <li>Delivered lectures and interactive sessions</li>
+                                    <li>Created syllabi, lesson plans, and assessments</li>
+                                    <li>Provided student guidance and mentoring</li>
                                 </ul>
-                            </p>
+                                <div class="tags"><span class="tag">Teaching</span><span class="tag">Curriculum Design</span></div>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2019 - September 2019</span></div>
+                             <div class="timeline-item">
+                                <div class="timeline-date">Mar 2019 – Sep 2019</div>
+                                <div class="timeline-content">
+                                    <h3 class="mb-1">Lecturer</h3>
+                                    <div class="subheading mb-1">BAUET, Bangladesh</div>
+                                    <ul class="mb-2">
+                                        <li>Facilitated interactive classroom sessions</li>
+                                        <li>Contributed to departmental initiatives</li>
+                                        <li>Engaged in professional development activities</li>
+                                    </ul>
+                                    <div class="tags"><span class="tag">Education</span><span class="tag">Professional Development</span></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
-            <!-- Miscellaneous Experience -->
-            <section class="resume-section" id="miscellaneous">
+            <hr class="m-0"/>
+
+            <!-- Publications with improved layout -->
+            <section class="resume-section" id="publications">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Miscellaneous Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Review Papers (Journal)</h3>
-                            <p>
-                                <ul>
-                                    <li>IEEE Access</li>
-                                    <li>Multimedia Tools and Applications.</li>
-                                    <li>Soft Computing.</li>
-                                    <li>Bulletin of Electrical Engineering and Informatics (BEEI).</li>
-                                    <li>Journal of Big Data.</li>
-                                    <li>Plos One</li>
-                                    <li>Journal of Diabetes and Metabolic Disorder</li>
-                                </ul>
-                            </p>
+                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                        <h2 class="mb-0">Publications</h2>
+                        <div class="btn-group" role="group" aria-label="Filter publications">
+                            <button class="btn btn-outline-primary btn-sm pub-filter active" data-filter="all">All</button>
+                            <button class="btn btn-outline-primary btn-sm pub-filter" data-filter="journal">Journal</button>
+                            <button class="btn btn-outline-primary btn-sm pub-filter" data-filter="conference">Conference
+                            </button>
+                            <button class="btn btn-outline-primary btn-sm pub-filter" data-filter="poster">Poster</button>
+                            <button class="btn btn-outline-primary btn-sm pub-filter" data-filter="demo">Demo</button>
+                            <button class="btn btn-outline-primary btn-sm pub-filter" data-filter="report">Report</button>
                         </div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Review Papers (Conference)</h3>
-                            <p>
-                                <ul>
-                                    <li>International Conference on Computational Intelligence, Security & IoT (ICCISIoT).</li>
-                                </ul>
-                            </p>
+
+                    <div class="small text-muted mt-2">Sources: <a href="https://orcid.org/0000-0002-0970-0455" target="_blank"
+                                                                   rel="noopener noreferrer">ORCiD</a> · <a
+                            href="https://www.webofscience.com/wos/author/record/E-6558-2018" target="_blank"
+                            rel="noopener noreferrer">Web of Science</a></div>
+
+                    <div class="pub-grid">
+                        <!-- Journal Articles -->
+                        <article class="pub-card" data-type="journal">
+                            <div class="pub-meta">Apr 2023 · Journal</div>
+                            <a class="pub-title" href="https://link.springer.com/article/10.1007/s11042-023-15399-6"
+                               target="_blank">Intelligent feature selection model based on particle swarm optimization to
+                                detect phishing websites</a>
+                        </article>
+                        <article class="pub-card" data-type="journal">
+                            <div class="pub-meta">May 2021 · Journal</div>
+                            <a class="pub-title" href="https://ijeecs.iaescore.com/index.php/IJEECS/article/view/23397"
+                               target="_blank">Data Mining Technique to Analyse and Predict Crime using Crime Categories and
+                                Arrest Records</a>
+                        </article>
+                        <article class="pub-card" data-type="journal">
+                            <div class="pub-meta">Oct 2020 · Journal</div>
+                            <a class="pub-title" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7528718/" target="_blank">Wearable
+                                Technology to Assist the Patients Infected with Novel Coronavirus (COVID-19)</a>
+                        </article>
+                        <article class="pub-card" data-type="journal">
+                            <div class="pub-meta">Jun 2020 · Journal</div>
+                            <a class="pub-title" href="https://link.springer.com/article/10.1007/s42979-020-00216-w"
+                               target="_blank">Predictive Data Mining Models for Novel Coronavirus (COVID-19) Infected Patients
+                                Recovery</a>
+                        </article>
+                        <article class="pub-card" data-type="journal">
+                            <div class="pub-meta">Jan 2020 · Journal</div>
+                            <a class="pub-title" href="https://www.tandfonline.com/doi/full/10.1080/03772063.2020.1713916"
+                               target="_blank">Coronary Artery Heart Disease Prediction: A Comparative Study of Computational
+                                Intelligence Techniques</a>
+                        </article>
+                        <article class="pub-card" data-type="journal">
+                            <div class="pub-meta">Dec 2019 · Journal</div>
+                            <a class="pub-title" href="https://www.sciencedirect.com/science/article/abs/pii/S1568494619306684"
+                               target="_blank">Discrete Spider Monkey Optimization for Traveling Salesman Problem</a>
+                        </article>
+                        <article class="pub-card" data-type="journal">
+                            <div class="pub-meta">Mar 2019 · Journal</div>
+                            <a class="pub-title" href="https://www.mecs-press.org/ijieeb/ijieeb-v11-n2/v11n2-3.html"
+                               target="_blank">Diabetes Prediction: A Deep Learning Approach</a>
+                        </article>
+
+                        <!-- Conference Papers -->
+                        <article class="pub-card" data-type="conference">
+                            <div class="pub-meta">Dec 2022 · Conference</div>
+                            <a class="pub-title" href="https://dl.gi.de/items/9fb99d58-008f-4e08-8a24-eecfe0c55d68"
+                               target="_blank">Workflow for Creating and Sealing a Research Data Management Container (RDMC)</a>
+                        </article>
+                        <article class="pub-card" data-type="conference">
+                            <div class="pub-meta">Dec 2022 · Conference</div>
+                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/10055061" target="_blank">Bangla
+                                Handwritten Words Recognition using Convolutional Neural Network</a>
+                        </article>
+                        <article class="pub-card" data-type="conference">
+                            <div class="pub-meta">Sep 2022 · Conference</div>
+                            <a class="pub-title" href="https://dl.gi.de/items/00fb5fba-6008-43a0-bc70-afe876ff7354"
+                               target="_blank">Including Data Management in Research Culture Increases the Reproducibility of
+                                Scientific Results</a>
+                        </article>
+                        <article class="pub-card" data-type="conference">
+                            <div class="pub-meta">Dec 2021 · Conference</div>
+                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/9689823" target="_blank">SSGTA: A
+                                Novel Swap Sequence based Game Theory Algorithm for Traveling Salesman Problem</a>
+                        </article>
+                        <article class="pub-card" data-type="conference">
+                            <div class="pub-meta">Dec 2020 · Conference</div>
+                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/9398041" target="_blank">Efficient
+                                IoT based Weather Station</a>
+                        </article>
+                        <article class="pub-card" data-type="conference">
+                            <div class="pub-meta">Dec 2020 · Conference</div>
+                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/9392687" target="_blank">Performance
+                                Analysis of Three-Phase Inverter for Minimizing Total Harmonic Distortion Using Space Vector
+                                Pulse Width Modulation Technique</a>
+                        </article>
+                        <article class="pub-card" data-type="conference">
+                            <div class="pub-meta">Dec 2020 · Conference</div>
+                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/9350407" target="_blank">Function
+                                Optimization using Evolutionary Game Theory Algorithm</a>
+                        </article>
+                        <article class="pub-card" data-type="conference">
+                            <div class="pub-meta">Dec 2019 · Conference</div>
+                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/9087503" target="_blank">Smart
+                                Security Box using Arduino and GSM Module</a>
+                        </article>
+                        <article class="pub-card" data-type="conference">
+                            <div class="pub-meta">May 2019 · Conference</div>
+                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/8934642" target="_blank">Neural
+                                Network based Software Defect Prediction using Genetic Algorithm and Particle Swarm
+                                Optimization</a>
+                        </article>
+                        <article class="pub-card" data-type="conference">
+                            <div class="pub-meta">Feb 2019 · Conference</div>
+                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/8679221" target="_blank">Spider
+                                Monkey Optimization to Solve Traveling Salesman Problem</a>
+                        </article>
+                        <article class="pub-card" data-type="conference">
+                            <div class="pub-meta">Dec 2018 · Conference</div>
+                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/8660872" target="_blank">Modified
+                                Grey Wolf Optimization to Solve Traveling Salesman Problem</a>
+                        </article>
+
+                        <!-- Posters -->
+                        <article class="pub-card" data-type="poster">
+                            <div class="pub-meta">2025 · Poster</div>
+                            <a class="pub-title" href="https://zenodo.org/records/16736070" target="_blank">Services to Create a
+                                Research Data Management Container (RDMC)</a>
+                        </article>
+                        <article class="pub-card" data-type="poster">
+                            <div class="pub-meta">2025 · Poster</div>
+                            <a class="pub-title" href="https://zenodo.org/records/16735860" target="_blank">Insights from a
+                                Student-Postdoc Tandem for Research Data Management in an Interdisciplinary Collaborative
+                                Research Center</a>
+                        </article>
+
+                        <!-- Demos -->
+                        <article class="pub-card" data-type="demo">
+                            <div class="pub-meta">2024 · Demo</div>
+                            <a class="pub-title" href="https://events.hifis.net/event/1741/contributions/13311/"
+                               target="_blank">NFDIxCS Creating a Research Data Management Container (RDMC)</a>
+                        </article>
+                        <article class="pub-card" data-type="demo">
+                            <div class="pub-meta">2024 · Demo</div>
+                            <a class="pub-title" href="https://events.hifis.net/event/1741/contributions/13916/"
+                               target="_blank">NFDIxCS: Guarantee Levels of the Research Data Management Container (RDMC)</a>
+                        </article>
+
+                        <!-- Reports -->
+                        <article class="pub-card" data-type="report">
+                            <div class="pub-meta">2024 · Report</div>
+                            <a class="pub-title" href="https://zenodo.org/records/15130045" target="_blank">Identification of
+                                core elements for a machine-actionable Data Management Plan metadata schema in the NFDI</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0"/>
+
+            <!-- Peer Review -->
+            <section class="resume-section" id="peer-review">
+                <div class="resume-section-content">
+                    <h2 class="mb-4">Scholarly Peer Review</h2>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <h5>Review Papers (Journal)</h5>
+                            <ul class="mb-3">
+                                <li>IEEE Access</li>
+                                <li>Multimedia Tools and Applications</li>
+                                <li>Soft Computing</li>
+                                <li>Bulletin of Electrical Engineering and Informatics (BEEI)</li>
+                                <li>Journal of Big Data</li>
+                                <li>PLOS ONE</li>
+                                <li>Journal of Diabetes and Metabolic Disorder</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Review Papers (Conference)</h5>
+                            <ul>
+                                <li>International Conference on Computational Intelligence, Security & IoT (ICCISIoT)</li>
+                            </ul>
                         </div>
                     </div>
-                    <div> ** source: <a href="https://orcid.org/0000-0002-0970-0455" target="_blank"> [ORCiD] </a>; <a href="https://www.webofscience.com/wos/author/record/E-6558-2018" target="_blank"> [Web of Science] </a></div>
+                    <div class="small">Sources: <a href="https://orcid.org/0000-0002-0970-0455" target="_blank"
+                                                   rel="noopener noreferrer">ORCiD</a> · <a
+                            href="https://www.webofscience.com/wos/author/record/E-6558-2018" target="_blank"
+                            rel="noopener noreferrer">Web of Science</a></div>
                 </div>
             </section>
-            <hr class="m-0" />
-            
-            <!-- Research Publications - Journal Articles -->
-            <section class="resume-section" id="journal">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Research Publications - Journal Articles</h2>
-                        <ol>
-                            <li>
-                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                                    <div class="flex-grow-1">
-                                        <div class="subheading mb-3" ><a href="https://link.springer.com/article/10.1007/s11042-023-15399-6">Intelligent feature selection model based on particle swarm optimization to detect phishing websites</a></div>
-                                    </div>
-                                    <div class="flex-shrink-0"><span class="text-primary">April 2023</span></div>
-                                </div>
-                            </li>
-                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                                <div class="flex-grow-1">
-                                    <li><div class="subheading mb-3"><a href="https://ijeecs.iaescore.com/index.php/IJEECS/article/view/23397">Data Mining Technique to Analyse and Predict Crime using Crime Categories and Arrest Records</a></div></li>
-                                </div>
-                                <div class="flex-shrink-0"><span class="text-primary">May 2021</span></div>
-                            </div>
-                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                                <div class="flex-grow-1">
-                                    <li><div class="subheading mb-3"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7528718/">Wearable Technology to Assist the Patients Infected with Novel Coronavirus (COVID-19)</a></div></li>
-                                </div>
-                                <div class="flex-shrink-0"><span class="text-primary">October 2020</span></div>
-                            </div>
-                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                                <div class="flex-grow-1">
-                                    <li><div class="subheading mb-3"><a href="https://link.springer.com/article/10.1007/s42979-020-00216-w">Predictive Data Mining Models for Novel Coronavirus (COVID-19) Infected Patients Recovery</a></div></li>
-                                </div>
-                                <div class="flex-shrink-0"><span class="text-primary">June 2020</span></div>
-                            </div>
-                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                                <div class="flex-grow-1">
-                                    <li><div class="subheading mb-3"><a href="https://www.tandfonline.com/doi/full/10.1080/03772063.2020.1713916">Coronary Artery Heart Disease Prediction: A Comparative Study of Computational Intelligence Techniques</a></div></li>
-                                </div>
-                                <div class="flex-shrink-0"><span class="text-primary">January 2020</span></div>
-                            </div>
-                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                                <div class="flex-grow-1">
-                                    <li><div class="subheading mb-3"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1568494619306684">Discrete Spider Monkey Optimization for Traveling Salesman Problem</a></div></li>
-                                </div>
-                                <div class="flex-shrink-0"><span class="text-primary">December 2019</span></div>
-                            </div>
-                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                                <div class="flex-grow-1">
-                                    <li><div class="subheading mb-3"><a href="https://www.mecs-press.org/ijieeb/ijieeb-v11-n2/v11n2-3.html">Diabetes Prediction: A Deep Learning Approach</a></div></li>
-                                </div>
-                                <div class="flex-shrink-0"><span class="text-primary">March 2019</span></div>
-                            </div>
-                    </ol>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Research Publications - Conference Proceedings -->
-            <section class="resume-section" id="conference">
-                <div class="resume-section-content">
-                    <ol>
-                        <h2 class="mb-5">Research Publications - Conference Proceedings</h2>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <li><div class="subheading mb-3"><a href="https://ieeexplore.ieee.org/document/10055061">Bangla Handwritten Words Recognition using Convolutional Neural Network </a></div></li>
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">December 2022</span></div>
-                        </div>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <li><div class="subheading mb-3"><a href="https://dl.gi.de/items/00fb5fba-6008-43a0-bc70-afe876ff7354">Including Data Management in Research Culture Increases the Reproducibility of Scientific Results </a></div></li>
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">September 2022</span></div>
-                        </div>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <li><div class="subheading mb-3"><a href="https://ieeexplore.ieee.org/document/9689823">SSGTA: A Novel Swap Sequence based Game Theory Algorithm for Traveling Salesman Problem </a></div></li>
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">December 2021</span></div>
-                        </div>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <li><div class="subheading mb-3"><a href="https://ieeexplore.ieee.org/document/9398041">Efficient IoT based Weather Station</a></div></li>
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">December 2020</span></div>
-                        </div>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <li><div class="subheading mb-3"><a href="https://ieeexplore.ieee.org/document/9392687">Performance Analysis of Three-Phase Inverter for Minimizing Total Harmonic Distortion Using Space Vector Pulse Width Modulation Technique</a></div></li>
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">December 2020</span></div>
-                        </div>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <li><div class="subheading mb-3"><a href="https://ieeexplore.ieee.org/document/9350407">Function Optimization using Evolutionary Game Theory Algorithm </a></div></li>
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">December 2020</span></div>
-                        </div>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <li><div class="subheading mb-3"><a href="https://ieeexplore.ieee.org/document/9087503">Smart Security Box using Arduino and GSM Module</a></div></li>
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">December 2019</span></div>
-                        </div>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <li><div class="subheading mb-3"><a href="https://ieeexplore.ieee.org/document/8934642">Neural Network based Software Defect Prediction using Genetic Algorithm and Particle Swarm Optimization</a></div></li>
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">May 2019</span></div>
-                        </div>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <li><div class="subheading mb-3"><a href="https://ieeexplore.ieee.org/document/8679221">Spider Monkey Optimization to Solve Traveling Salesman Problem</a></div></li>
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">February 2019</span></div>
-                        </div>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <li><div class="subheading mb-3"><a href="https://ieeexplore.ieee.org/document/8660872">Modified Grey Wolf Optimization to Solve Traveling Salesman Problem</a></div></li>
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">December 2018</span></div>
-                        </div>
-                    </ol>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
+            <hr class="m-0"/>
+
+            <!-- Skills -->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="skills-columns">
-                        <div class="skills-column">
-                            <h3 class="mb-0">Programming Languages</h3>
-                            <div class="list-inline dev-icons">
-                                <p class="list-inline-item"><i class="fab fa-python"></i><span>Python</span></p>
-                                <p class="list-inline-item"><i class="fab fa-java"></i><span>Java</span></p>
-                                <p class="list-inline-item"><i class="fab fa-cuttlefish"></i><span>C++</span></p>
-                            </div>
-                            <h3 class="mb-0">Tool and Libraries</h3>
-                            <div class="list-inline dev-icons">
-                                <p class="list-inline-item"><i class="fas fa-cube"></i><span>TensorFlow</span></p>
-                                <p class="list-inline-item"><i class="fas fa-chart-bar"></i><span>MATLAB</span></p>
-                            </div>
-                            <h3 class="mb-0">Data Analysis</h3>
-                            <div class="list-inline dev-icons">
-                                <p class="list-inline-item"><i class="fas fa-chart-pie"></i><span>Power BI</span></p>
+                    <h2 class="mb-4">Skills</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <h5 class="mb-2"><i class="fas fa-code me-2"></i>Programming Languages</h5>
+                            <div class="chips"><span class="chip">Python</span><span class="chip">Java</span><span class="chip">C++</span>
                             </div>
                         </div>
-                        <div class="skills-column">
-                            <h3 class="mb-0">Database</h3>
-                            <div class="list-inline dev-icons">
-                                <p class="list-inline-item"><i class="fas fa-database"></i><span>SQL</span></p>
-                            </div>
-                            <h3 class="mb-0">DevOps</h3>
-                            <div class="list-inline dev-icons">
-                                <p class="list-inline-item"><i class="fab fa-docker"></i><span>Docker</span></p>
-                                <p class="list-inline-item"><i class="fab fa-git"></i><span>Git</span></p>
-                                <p class="list-inline-item"><i class="fab fa-github"></i><span>GitHub-Actions</span></p>
-                                <p class="list-inline-item"><i class="fas fa-cogs"></i><span>CI/CD</span></p>
-                            </div>
-                            <h3 class="mb-0">Language</h3>
-                            <div class="list-inline dev-icons">
-                                <p class="list-inline-item"><i class="fas fa-language"></i><span>Bangla (Native)</span></p>
-                                <p class="list-inline-item"><i class="fas fa-language"></i><span>English (Fluent)</span></p>
-                            </div>
+                        <div class="col-md-6">
+                            <h5 class="mb-2"><i class="fas fa-toolbox me-2"></i>Tools & Libraries</h5>
+                            <div class="chips"><span class="chip">TensorFlow</span><span class="chip">MATLAB</span></div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="mb-2"><i class="fas fa-chart-bar me-2"></i>Data Analysis</h5>
+                            <div class="chips"><span class="chip">Power BI</span></div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="mb-2"><i class="fas fa-database me-2"></i>Database</h5>
+                            <div class="chips"><span class="chip">SQL</span></div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="mb-2"><i class="fas fa-cogs me-2"></i>DevOps</h5>
+                            <div class="chips"><span class="chip">Docker</span><span class="chip">Git</span><span class="chip">GitHub Actions</span><span
+                                    class="chip">CI/CD</span></div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="mb-2"><i class="fas fa-language me-2"></i>Languages</h5>
+                            <div class="chips"><span class="chip">Bangla (Native)</span><span
+                                    class="chip">English (Fluent)</span></div>
                         </div>
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
-            <!-- Awards-->
+            <hr class="m-0"/>
+
+            <!-- Awards -->
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Awards</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Best Paper Award</h3>
-                            <div class="subheading mb-3"> International Conference on Innovation in Engineering and Technology (ICIET), 2018</div>
-                            <div>Got best paper award for the paper "<b>Modified Grey Wolf Optimization to Solve Traveling Salesman Problem</b>". </div>
+                    <h2 class="mb-4">Awards</h2>
+                    <div class="card project-card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title mb-1"><i class="fas fa-trophy me-2 text-warning"></i>Best Paper Award</h5>
+                            <div class="small text-muted">International Conference on Innovation in Engineering and Technology
+                                (ICIET), 2018
+                            </div>
+                            <p class="mb-0">Got best paper award for the paper "Modified Grey Wolf Optimization to Solve
+                                Traveling Salesman Problem".</p>
                         </div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Scholarship</h3>
-                            <div class="subheading mb-3">Khulna University of Engineering and Technology, Bangladesh</div>
-                            <div>Technical Scholarship in consecutive four years for maintaining decent results.</div>
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-1"><i class="fas fa-award me-2 text-warning"></i>Scholarship</h5>
+                            <div class="small text-muted">Khulna University of Engineering and Technology, Bangladesh</div>
+                            <p class="mb-0">Technical Scholarship in consecutive four years for maintaining decent results.</p>
                         </div>
                     </div>
                 </div>
             </section>
+            <hr class="m-0"/>
+
+            <!-- Contact -->
+            <section class="resume-section" id="contact">
+                <div class="resume-section-content">
+                    <h2 class="mb-4">Contact</h2>
+                    <p class="mb-3">Have a collaboration idea, paper request, or question? Feel free to reach out.</p>
+                    <div class="contact-form">
+                        <div class="row g-2">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required/>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="_replyto" class="form-control" required/>
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control"/>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                            </div>
+                            <div class="col-12 d-flex align-items-center gap-2">
+                                <button class="btn btn-primary" type="button" id="submitBtn">
+                                    <i class="fas fa-paper-plane me-1"></i>Send Message
+                                </button>
+                                <a class="btn btn-outline-secondary"
+                                   href="mailto:safialislam302@gmail.com?subject=From%20Portfolio%20Site" target="_blank"
+                                   rel="noopener noreferrer"><i class="fas fa-envelope me-1"></i>Email</a>
+                                <span id="formStatus" class="small text-muted"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0"/>
+
+            <!-- Resume -->
+            <section class="resume-section" id="resume">
+                <div class="resume-section-content">
+                    <h2 class="mb-4">Resume</h2>
+                    <div class="ratio ratio-16x9">
+                        <iframe title="Resume" src="https://drive.google.com/file/d/1uKAGhGVYkGAx9sGiOsrW3W-tOXNM6Oml/preview" allowfullscreen style="border: 0"></iframe>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0"/>
+
+            <!-- Footer -->
+            <footer class="text-center py-4 small">
+                © <span id="year"></span> Safial Islam Ayon
+            </footer>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Custom JS -->
         <script src="js/scripts.js"></script>
     </body>
 </html>

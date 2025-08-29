@@ -1,0 +1,126 @@
+/*
+  Custom research-focused theme with dark/light mode
+  Uses CSS variables and [data-theme] attribute toggled by JS
+*/
+
+:root {
+  --bg: #ffffff;
+  --text: #0f172a; /* slate-900 */
+  --muted: #475569; /* slate-600 */
+  --primary: #2563eb; /* blue-600 */
+  --primary-contrast: #ffffff;
+  --card: #f8fafc; /* slate-50 */
+  --chip: #e2e8f0; /* slate-200 */
+  --border: #e5e7eb;
+}
+
+html[data-theme='dark'] {
+  --bg: #0b1220;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --primary: #60a5fa;
+  --primary-contrast: #0b1220;
+  --card: #0f172a;
+  --chip: #1f2937;
+  --border: #1f2937;
+}
+
+html, body { height: 100%; }
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6 { color: var(--text); }
+
+p, li { color: var(--muted); }
+
+a { color: var(--primary); text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+/* Sidebar overrides */
+#sideNav { background: var(--primary) !important; }
+#sideNav .navbar-nav .nav-link { color: var(--primary-contrast); }
+#sideNav .navbar-nav .nav-link:hover { color: #f1f5f9; }
+#sideNav .navbar-brand .img-profile { border: 0.35rem solid rgba(255,255,255,.3); }
+
+/* Sections */
+.resume-section { padding: 4rem 0; }
+.resume-section .resume-section-content { max-width: 900px; margin: 0 auto; }
+
+/* Chips */
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+.chip { background: var(--chip); color: var(--text); border-radius: 999px; padding: .35rem .75rem; font-size: .9rem; }
+
+/* Publications - Grid */
+/* Show all items in a single responsive grid that shrinks cards to fit */
+.pub-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: .6rem; }
+.pub-card { background: var(--card); border: 1px solid var(--border); border-radius: .6rem; padding: .6rem .7rem; display: grid; gap: .25rem; }
+.pub-card .pub-meta { font-size: .8rem; color: var(--muted); }
+.pub-card .pub-title { color: var(--text); text-decoration: none; font-size: .92rem; line-height: 1.25; }
+.pub-card .pub-title:hover { text-decoration: underline; }
+
+/* Compact margins so more fit on screen */
+section#publications .resume-section-content { max-width: 1200px; }
+
+/* On very small screens keep 2 columns if possible */
+@media (max-width: 420px) { .pub-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* Cards / Projects */
+.card.project-card { background: var(--card); border: 1px solid var(--border); }
+.card .card-title { color: var(--text); }
+.card .card-text { color: var(--muted); }
+.tags { display: flex; gap: .35rem; margin-top: .5rem; }
+.tag { background: var(--chip); color: var(--text); border-radius: .4rem; padding: .2rem .5rem; font-size: .8rem; }
+
+/* Timeline - 2 column (dates left, details right) */
+.timeline { display: grid; grid-template-columns: 180px 1fr; gap: 1rem 1.25rem; align-items: start; }
+.timeline-item { display: contents; }
+.timeline-item .timeline-date { color: var(--muted); font-weight: 600; }
+.timeline-item .timeline-content { background: var(--card); border: 1px solid var(--border); border-radius: .6rem; padding: .9rem 1rem; }
+
+@media (max-width: 768px) {
+  .timeline { grid-template-columns: 1fr; }
+  .timeline-item .timeline-content { order: 2; }
+}
+
+/* Experience cards - compact and always single column to fit any screen */
+.exp-list { display: grid; grid-template-columns: 1fr; gap: .8rem; }
+.exp-card { background: var(--card); border: 1px solid var(--border); border-radius: .6rem; padding: .8rem .9rem; }
+.exp-card .exp-header { display: grid; grid-template-columns: 1fr auto; gap: .5rem; align-items: start; }
+
+/* Experience as timeline: date left, details right */
+#experience .exp-card { display: grid; grid-template-columns: 180px 1fr; gap: 1rem; }
+#experience .exp-card .exp-header { grid-column: 2; }
+#experience .exp-card .exp-date { grid-column: 1; color: var(--muted); font-weight: 600; }
+
+@media (max-width: 768px) {
+  #experience .exp-card { grid-template-columns: 1fr; }
+  #experience .exp-card .exp-date { order: -1; }
+}
+
+/* Contact */
+.contact-form .form-label { color: var(--text); }
+.contact-form .form-control, .contact-form textarea { background: var(--card); color: var(--text); border-color: var(--border); }
+.contact-form .form-control:focus { border-color: var(--primary); box-shadow: 0 0 0 .2rem rgba(37,99,235,.15); }
+
+/* Buttons */
+.btn-outline-primary { color: var(--primary); border-color: var(--primary); }
+.btn-outline-primary:hover { background: var(--primary); color: var(--primary-contrast); }
+
+/* Footer */
+footer a { color: var(--primary); }
+
+/* Resume embed height a bit larger */
+#resume .ratio { --bs-aspect-ratio: 65%; }
+
+/* Utilities */
+.text-primary { color: var(--primary) !important; }
+
+/* Responsive */
+@media (max-width: 991.98px) {
+  #sideNav { position: sticky; top: 0; }
+}
