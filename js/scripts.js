@@ -152,3 +152,19 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 });
+
+// Interactive functionality
+document.querySelectorAll('.experience-item').forEach(item => {
+    item.addEventListener('click', function () {
+        // Remove active class from all items and cards
+        document.querySelectorAll('.experience-item').forEach(i => i.classList.remove('active'));
+        document.querySelectorAll('.detail-card').forEach(c => c.classList.remove('active'));
+
+        // Add active class to clicked item
+        this.classList.add('active');
+
+        // Show corresponding detail card
+        const targetId = this.getAttribute('data-target');
+        document.getElementById(targetId).classList.add('active');
+    });
+});

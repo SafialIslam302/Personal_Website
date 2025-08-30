@@ -1,0 +1,74 @@
+{
+    "checksum": "9415250ec53bddb7a08eac727f63e2fcf68ed75ed01b67dda901dd2b3708a77c",
+    "data": {
+    "id": "b9c4301e-f2bc-46ab-bdcf-4a1abdcfa276",
+    "createdAt": 1756554067689,
+    "updatedAt": 1756554069174,
+    "title": "ok i have to change many things,",
+    "messages": [
+        {
+            "id": "2e017278-2063-4b1b-a826-210ce666ab21",
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "ok i have to change many things,"
+                }
+            ],
+            "context": {
+                "codebaseEnabled": true
+            },
+            "createdAt": 1756554067713,
+            "isInternal": false,
+            "rawContent": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "ok i have to change many things, "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "autoAppliedRules": []
+        },
+        {
+            "id": "63fcfc5f-c548-414a-b628-c569cd160686",
+            "role": "system",
+            "content": [
+                {
+                    "type": "errorText",
+                    "text": "",
+                    "actions": [
+                        {
+                            "type": "upgradePlan",
+                            "title": "Upgrade plan",
+                            "waitSeconds": 946
+                        },
+                        {
+                            "type": "externalAction",
+                            "title": "Try Again",
+                            "action": "regenerateLastAnswer"
+                        }
+                    ]
+                }
+            ],
+            "createdAt": 1756554069174,
+            "isInternal": false
+        }
+    ],
+    "isAgent": true,
+    "isCustomAgent": false,
+    "isUnitTestsAgent": false,
+    "isE2EAgent": false,
+    "isWebDevAgent": false,
+    "isQnaAgent": false,
+    "isRepoInfoAgent": false,
+    "autoApply": true,
+    "model": "default"
+}
+}
