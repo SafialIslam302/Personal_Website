@@ -64,16 +64,15 @@
                         <p class="lead mb-3">I am a researcher focused on reproducibility, data-centric AI, and scientific
                             software.</p>
                         <div class="chips mb-3">
-                            <span class="chip">Reproducible Research</span>
-                            <span class="chip">Data-Centric AI</span>
-                            <span class="chip">Scientific Workflows</span>
+                            <span class="chip">Research Data Management</span>
                             <span class="chip">Research Software</span>
-                            <span class="chip">Optimization</span>
-                            <span class="chip">NLP</span>
+                            <span class="chip">Reproducible Research</span>
+                            <span class="chip">FAIR Principle</span>
+                            <span class="chip">Scientific Workflows</span>
                         </div>
                         <ul class="list-unstyled mb-0 small">
                             <li><b>Address:</b> Caputher Heuweg 12, 14478 Potsdam, Germany</li>
-                            <li><b>Mobile:</b> 01747785652</li>
+                            <li><b>Mobile:</b> +491747785652</li>
                             <li><b>Email:</b> safialislam302@gmail.com; safial.islam.ayon@uni-potsdam.de</li>
                             <li><b>Profiles:</b>
                                 <a href="https://scholar.google.com/citations?user=PUyJ1ZQAAAAJ&hl=en" target="_blank"
@@ -102,9 +101,9 @@
                                 <h3 class="mb-1">University of Potsdam</h3>
                                 <div class="subheading mb-1">M.Sc. in Data Science</div>
                                 <div class="mb-2"><b>CGPA:</b> 2.1 (German system, equivalent to "Good")</div>
-                                <div><b>Thesis:</b> Automating Investigations on the Reproducibility of Scientific Publications Based on their Digital Artifacts. <a
+                                <div><b>Thesis:</b> <a
                                             href="https://drive.google.com/file/d/1RwRQhWQLh1oUYJki1a_yBGTY_sLacz9G/view?usp=drive_link"
-                                            target="_blank" rel="noopener noreferrer">[Link]</a></div>
+                                            target="_blank" rel="noopener noreferrer">Automating Investigations on the Reproducibility of Scientific Publications Based on their Digital Artifacts </a></div>
                             </div>
                         </div>
                         <div class="timeline-item">
@@ -113,9 +112,9 @@
                                 <h3 class="mb-1">Khulna University of Engineering and Technology (KUET)</h3>
                                 <div class="subheading mb-1">B.Sc. in Computer Science and Engineering</div>
                                 <div class="mb-2"><b>CGPA:</b> 3.66 / 4.00</div>
-                                <div><b>Thesis:</b> Modified Spider Monkey Optimization for Traveling Salesman Problem. <a
+                                <div><b>Thesis:</b>  <a
                                         href="https://drive.google.com/file/d/13xrLyWXJH0pe6_D-yeL3l4VtnUBU5hiz/view?usp=drive_link"
-                                        target="_blank" rel="noopener noreferrer">[Link]</a></div>
+                                        target="_blank" rel="noopener noreferrer">Modified Spider Monkey Optimization for Traveling Salesman Problem </a></div>
                             </div>
                         </div>
                     </div>
@@ -187,7 +186,9 @@
                         <div class="experience-right">
                             <div class="detail-card active" id="exp1">
                                 <h3 class="mb-1">Research Associate</h3>
-                                <div class="subheading mb-1">NFDIxCS · University of Potsdam, Potsdam, Germany</div>
+                                <div class="subheading mb-1">
+                                    <a href="https://nfdixcs.org/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> NFDIxCS </a> · University of Potsdam, Potsdam, Germany
+                                </div>
                                 <ul class="mb-2">
                                     <li>Develop services and workflows to package complex research artifacts into reusable data objects</li>
                                     <li>Advance FAIR-by-design practices for CS sub-domains and improve research reproducibility</li>
@@ -201,7 +202,10 @@
 
                             <div class="detail-card" id="exp2">
                                 <h3 class="mb-1">Student Research Assistant</h3>
-                                <div class="subheading mb-1">SFB 1294 - Z03, University of Potsdam, Potsdam, Germany</div>
+                                <div class="subheading mb-1">
+                                    <a href="https://www.sfb1294.de/research/research-area-z/z03" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> SFB 1294 - Z03 </a> · University of Potsdam, Potsdam, Germany
+                                </div>
+                                <div class="subheading mb-1"></div>
                                 <ul class="mb-2">
                                     <li>Emphasized reproducibility of scientific papers</li>
                                     <li>Identified and resolved code bugs</li>
@@ -249,157 +253,297 @@
             <!-- Publications with improved layout -->
             <section class="resume-section" id="publications">
                 <div class="resume-section-content">
-                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
-                        <h2 class="mb-0">Publications</h2>
-                        <div class="btn-group" role="group" aria-label="Filter publications">
-                            <button class="btn btn-outline-primary btn-sm pub-filter active" data-filter="all">All</button>
-                            <button class="btn btn-outline-primary btn-sm pub-filter" data-filter="journal">Journal</button>
-                            <button class="btn btn-outline-primary btn-sm pub-filter" data-filter="conference">Conference
-                            </button>
-                            <button class="btn btn-outline-primary btn-sm pub-filter" data-filter="poster">Poster</button>
-                            <button class="btn btn-outline-primary btn-sm pub-filter" data-filter="demo">Demo</button>
-                            <button class="btn btn-outline-primary btn-sm pub-filter" data-filter="report">Report</button>
+                    <div class="d-flex align-items-start flex-column gap-2 mb-3">
+                        <div class="d-flex align-items-center justify-content-between w-100 flex-wrap gap-2">
+                            <h2 class="mb-0">Publications</h2>
+                            <div class="btn-group" role="group" aria-label="Filter by type">
+                                <button class="btn btn-outline-primary btn-sm pub-filter pub-filter-type active" data-scope="type" data-filter="all">All Types</button>
+                                <button class="btn btn-outline-primary btn-sm pub-filter pub-filter-type" data-scope="type" data-filter="journal">Journal</button>
+                                <button class="btn btn-outline-primary btn-sm pub-filter pub-filter-type" data-scope="type" data-filter="conference">Conference</button>
+                                <button class="btn btn-outline-primary btn-sm pub-filter pub-filter-type" data-scope="type" data-filter="poster">Poster</button>
+                                <button class="btn btn-outline-primary btn-sm pub-filter pub-filter-type" data-scope="type" data-filter="demo">Demo</button>
+                                <button class="btn btn-outline-primary btn-sm pub-filter pub-filter-type" data-scope="type" data-filter="report">Report</button>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end w-100">
+                            <div class="btn-group" role="group" aria-label="Filter by subject">
+                                <button class="btn btn-outline-primary btn-sm pub-filter pub-filter-subject active" data-scope="subject" data-filter="all">All Subjects</button>
+                                <button class="btn btn-outline-primary btn-sm pub-filter pub-filter-subject" data-scope="subject" data-filter="ml">ML & DM</button>
+                                <button class="btn btn-outline-primary btn-sm pub-filter pub-filter-subject" data-scope="subject" data-filter="health">Health</button>
+                                <button class="btn btn-outline-primary btn-sm pub-filter pub-filter-subject" data-scope="subject" data-filter="optimization">Optimization</button>
+                                <button class="btn btn-outline-primary btn-sm pub-filter pub-filter-subject" data-scope="subject" data-filter="iot">IoT</button>
+                                <button class="btn btn-outline-primary btn-sm pub-filter pub-filter-subject" data-scope="subject" data-filter="rdm">RDM</button>
+                                <button class="btn btn-outline-primary btn-sm pub-filter pub-filter-subject" data-scope="subject" data-filter="se">Software Eng</button>
+                            </div>
+                        </div>
+                        <div id="pub-no-results" class="small text-muted" style="display:none;">No publications found for the selected filters.</div>
+                    </div>
+
+                    <div class="commit-timeline">
+                        <!-- 2025 -->
+                        <div class="commit-item show" data-type="poster" data-domain="rdm">
+                            <a class="commit-message" href="https://zenodo.org/records/16736070" target="_blank">
+                                Services to Create a Research Data Management Container (RDMC)
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">RDM</span>
+                                <span class="commit-date">Aug 2025</span>
+                                <span class="commit-type poster">Poster</span>
+                            </div>
+                        </div>
+
+                        <div class="commit-item show" data-type="poster" data-domain="rdm">
+                            <a class="commit-message" href="https://zenodo.org/records/16735860" target="_blank">
+                                Insights from a Student-Postdoc Tandem for Research Data Management in an Interdisciplinary Collaborative Research Center
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">RDM</span>
+                                <span class="commit-date">Aug 2025</span>
+                                <span class="commit-type poster">Poster</span>
+                            </div>
+                        </div>
+
+                        <!-- 2024 -->
+                        <div class="commit-item show" data-type="demo" data-domain="rdm">
+                            <a class="commit-message" href="https://events.hifis.net/event/1741/contributions/13311/" target="_blank">
+                                NFDIxCS Creating a Research Data Management Container (RDMC)
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">RDM</span>
+                                <span class="commit-date">Feb 2025</span>
+                                <span class="commit-type demo">Demo</span>
+                            </div>
+                        </div>
+
+                        <div class="commit-item show" data-type="demo" data-domain="rdm">
+                            <a class="commit-message" href="https://events.hifis.net/event/1741/contributions/13916/" target="_blank">
+                                NFDIxCS: Guarantee Levels of the Research Data Management Container (RDMC)
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">RDM</span>
+                                <span class="commit-date">Feb 2024</span>
+                                <span class="commit-type demo">Demo</span>
+                            </div>
+                        </div>
+
+                        <div class="commit-item show" data-type="report" data-domain="rdm">
+                            <a class="commit-message" href="https://zenodo.org/records/15130045" target="_blank">
+                                Identification of core elements for a machine-actionable Data Management Plan metadata schema in the NFDI
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">RDM</span>
+                                <span class="commit-date">May 2025</span>
+                                <span class="commit-type report">Report</span>
+                            </div>
+                        </div>
+
+                        <!-- 2023 -->
+                        <div class="commit-item show" data-type="journal" data-domain="ml">
+                            <a class="commit-message" href="https://link.springer.com/article/10.1007/s11042-023-15399-6" target="_blank">
+                                Intelligent feature selection model based on particle swarm optimization to detect phishing websites
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">ML</span>
+                                <span class="commit-date">Apr 2023</span>
+                                <span class="commit-type journal">Journal</span>
+                            </div>
+                        </div>
+
+                        <!-- 2022 -->
+                        <div class="commit-item show" data-type="conference" data-domain="rdm">
+                            <a class="commit-message" href="https://dl.gi.de/items/9fb99d58-008f-4e08-8a24-eecfe0c55d68" target="_blank">
+                                Workflow for Creating and Sealing a Research Data Management Container (RDMC)
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">RDM</span>
+                                <span class="commit-date">Dec 2022</span>
+                                <span class="commit-type conference">Conference</span>
+                            </div>
+                        </div>
+
+                        <div class="commit-item show" data-type="conference" data-domain="ml">
+                            <a class="commit-message" href="https://ieeexplore.ieee.org/document/10055061" target="_blank">
+                                Bangla Handwritten Words Recognition using Convolutional Neural Network
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">ML</span>
+                                <span class="commit-date">Dec 2022</span>
+                                <span class="commit-type conference">Conference</span>
+                            </div>
+                        </div>
+
+                        <div class="commit-item show" data-type="conference" data-domain="rdm">
+                            <a class="commit-message" href="https://dl.gi.de/items/00fb5fba-6008-43a0-bc70-afe876ff7354" target="_blank">
+                                Including Data Management in Research Culture Increases the Reproducibility of Scientific Results
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">RDM</span>
+                                <span class="commit-date">Sep 2022</span>
+                                <span class="commit-type conference">Conference</span>
+                            </div>
+                        </div>
+
+                        <!-- 2021 -->
+                        <div class="commit-item show" data-type="conference" data-domain="optimization">
+                            <a class="commit-message" href="https://ieeexplore.ieee.org/document/9689823" target="_blank">
+                                SSGTA: A Novel Swap Sequence based Game Theory Algorithm for Traveling Salesman Problem
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">OPT</span>
+                                <span class="commit-date">Dec 2021</span>
+                                <span class="commit-type conference">Conference</span>
+                            </div>
+                        </div>
+
+                        <div class="commit-item show" data-type="journal" data-domain="ml">
+                            <a class="commit-message" href="https://ijeecs.iaescore.com/index.php/IJEECS/article/view/23397" target="_blank">
+                                Data Mining Technique to Analyse and Predict Crime using Crime Categories and Arrest Records
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">ML</span>
+                                <span class="commit-date">May 2021</span>
+                                <span class="commit-type journal">Journal</span>
+                            </div>
+                        </div>
+
+                        <!-- 2020 -->
+                        <div class="commit-item show" data-type="journal" data-domain="health">
+                            <a class="commit-message" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7528718/" target="_blank">
+                                Wearable Technology to Assist the Patients Infected with Novel Coronavirus (COVID-19)
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">Health</span>
+                                <span class="commit-date">Oct 2020</span>
+                                <span class="commit-type journal">Journal</span>
+                            </div>
+                        </div>
+
+                        <div class="commit-item show" data-type="journal" data-domain="health">
+                            <a class="commit-message" href="https://link.springer.com/article/10.1007/s42979-020-00216-w" target="_blank">
+                                Predictive Data Mining Models for Novel Coronavirus (COVID-19) Infected Patients Recovery
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">Health</span>
+                                <span class="commit-date">Jun 2020</span>
+                                <span class="commit-type journal">Journal</span>
+                            </div>
+                        </div>
+
+                        <div class="commit-item show" data-type="conference" data-domain="iot">
+                            <a class="commit-message" href="https://ieeexplore.ieee.org/document/9398041" target="_blank">
+                                Efficient IoT based Weather Station
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">IoT</span>
+                                <span class="commit-date">Dec 2020</span>
+                                <span class="commit-type conference">Conference</span>
+                            </div>
+                        </div>
+
+                        <div class="commit-item show" data-type="conference" data-domain="iot">
+                            <a class="commit-message" href="https://ieeexplore.ieee.org/document/9392687" target="_blank">
+                                Performance Analysis of Three-Phase Inverter for Minimizing Total Harmonic Distortion Using Space Vector Pulse Width Modulation Technique
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">IoT</span>
+                                <span class="commit-date">Dec 2020</span>
+                                <span class="commit-type conference">Conference</span>
+                            </div>
+                        </div>
+
+                        <div class="commit-item show" data-type="conference" data-domain="optimization">
+                            <a class="commit-message" href="https://ieeexplore.ieee.org/document/9350407" target="_blank">
+                                Function Optimization using Evolutionary Game Theory Algorithm
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">OPT</span>
+                                <span class="commit-date">Dec 2020</span>
+                                <span class="commit-type conference">Conference</span>
+                            </div>
+                        </div>
+
+                        <div class="commit-item show" data-type="journal" data-domain="health">
+                            <a class="commit-message" href="https://www.tandfonline.com/doi/full/10.1080/03772063.2020.1713916" target="_blank">
+                                Coronary Artery Heart Disease Prediction: A Comparative Study of Computational Intelligence Techniques
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">Health</span>
+                                <span class="commit-date">Jan 2020</span>
+                                <span class="commit-type journal">Journal</span>
+                            </div>
+                        </div>
+
+                        <!-- 2019 -->
+                        <div class="commit-item show" data-type="journal" data-domain="optimization">
+                            <a class="commit-message" href="https://www.sciencedirect.com/science/article/abs/pii/S1568494619306684" target="_blank">
+                                Discrete Spider Monkey Optimization for Traveling Salesman Problem
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">OPT</span>
+                                <span class="commit-date">Dec 2019</span>
+                                <span class="commit-type journal">Journal</span>
+                            </div>
+                        </div>
+
+                        <div class="commit-item show" data-type="conference" data-domain="iot">
+                            <a class="commit-message" href="https://ieeexplore.ieee.org/document/9087503" target="_blank">
+                                Smart Security Box using Arduino and GSM Module
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">IoT</span>
+                                <span class="commit-date">Dec 2019</span>
+                                <span class="commit-type conference">Conference</span>
+                            </div>
+                        </div>
+
+                        <div class="commit-item show" data-type="conference" data-domain="se">
+                            <a class="commit-message" href="https://ieeexplore.ieee.org/document/8934642" target="_blank">
+                                Neural Network based Software Defect Prediction using Genetic Algorithm and Particle Swarm Optimization
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">SE</span>
+                                <span class="commit-date">May 2019</span>
+                                <span class="commit-type conference">Conference</span>
+                            </div>
+                        </div>
+
+                        <div class="commit-item show" data-type="journal" data-domain="ml">
+                            <a class="commit-message" href="https://www.mecs-press.org/ijieeb/ijieeb-v11-n2/v11n2-3.html" target="_blank">
+                                Diabetes Prediction: A Deep Learning Approach
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">ML</span>
+                                <span class="commit-date">Mar 2019</span>
+                                <span class="commit-type journal">Journal</span>
+                            </div>
+                        </div>
+
+                        <div class="commit-item show" data-type="conference" data-domain="optimization">
+                            <a class="commit-message" href="https://ieeexplore.ieee.org/document/8679221" target="_blank">
+                                Spider Monkey Optimization to Solve Traveling Salesman Problem
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">OPT</span>
+                                <span class="commit-date">Feb 2019</span>
+                                <span class="commit-type conference">Conference</span>
+                            </div>
+                        </div>
+
+                        <!-- 2018 -->
+                        <div class="commit-item show" data-type="conference" data-domain="optimization">
+                            <a class="commit-message" href="https://ieeexplore.ieee.org/document/8660872" target="_blank">
+                                Modified Grey Wolf Optimization to Solve Traveling Salesman Problem
+                            </a>
+                            <div class="commit-meta">
+                                <span class="commit-domain">OPT</span>
+                                <span class="commit-date">Dec 2018</span>
+                                <span class="commit-type conference">Conference</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="small text-muted mt-2">Sources: <a href="https://orcid.org/0000-0002-0970-0455" target="_blank"
-                                                                   rel="noopener noreferrer">ORCiD</a> · <a
-                            href="https://www.webofscience.com/wos/author/record/E-6558-2018" target="_blank"
-                            rel="noopener noreferrer">Web of Science</a></div>
-
-                    <div class="pub-grid">
-                        <!-- Journal Articles -->
-                        <article class="pub-card" data-type="journal">
-                            <div class="pub-meta">Apr 2023 · Journal</div>
-                            <a class="pub-title" href="https://link.springer.com/article/10.1007/s11042-023-15399-6"
-                               target="_blank">Intelligent feature selection model based on particle swarm optimization to
-                                detect phishing websites</a>
-                        </article>
-                        <article class="pub-card" data-type="journal">
-                            <div class="pub-meta">May 2021 · Journal</div>
-                            <a class="pub-title" href="https://ijeecs.iaescore.com/index.php/IJEECS/article/view/23397"
-                               target="_blank">Data Mining Technique to Analyse and Predict Crime using Crime Categories and
-                                Arrest Records</a>
-                        </article>
-                        <article class="pub-card" data-type="journal">
-                            <div class="pub-meta">Oct 2020 · Journal</div>
-                            <a class="pub-title" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7528718/" target="_blank">Wearable
-                                Technology to Assist the Patients Infected with Novel Coronavirus (COVID-19)</a>
-                        </article>
-                        <article class="pub-card" data-type="journal">
-                            <div class="pub-meta">Jun 2020 · Journal</div>
-                            <a class="pub-title" href="https://link.springer.com/article/10.1007/s42979-020-00216-w"
-                               target="_blank">Predictive Data Mining Models for Novel Coronavirus (COVID-19) Infected Patients
-                                Recovery</a>
-                        </article>
-                        <article class="pub-card" data-type="journal">
-                            <div class="pub-meta">Jan 2020 · Journal</div>
-                            <a class="pub-title" href="https://www.tandfonline.com/doi/full/10.1080/03772063.2020.1713916"
-                               target="_blank">Coronary Artery Heart Disease Prediction: A Comparative Study of Computational
-                                Intelligence Techniques</a>
-                        </article>
-                        <article class="pub-card" data-type="journal">
-                            <div class="pub-meta">Dec 2019 · Journal</div>
-                            <a class="pub-title" href="https://www.sciencedirect.com/science/article/abs/pii/S1568494619306684"
-                               target="_blank">Discrete Spider Monkey Optimization for Traveling Salesman Problem</a>
-                        </article>
-                        <article class="pub-card" data-type="journal">
-                            <div class="pub-meta">Mar 2019 · Journal</div>
-                            <a class="pub-title" href="https://www.mecs-press.org/ijieeb/ijieeb-v11-n2/v11n2-3.html"
-                               target="_blank">Diabetes Prediction: A Deep Learning Approach</a>
-                        </article>
-
-                        <!-- Conference Papers -->
-                        <article class="pub-card" data-type="conference">
-                            <div class="pub-meta">Dec 2022 · Conference</div>
-                            <a class="pub-title" href="https://dl.gi.de/items/9fb99d58-008f-4e08-8a24-eecfe0c55d68"
-                               target="_blank">Workflow for Creating and Sealing a Research Data Management Container (RDMC)</a>
-                        </article>
-                        <article class="pub-card" data-type="conference">
-                            <div class="pub-meta">Dec 2022 · Conference</div>
-                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/10055061" target="_blank">Bangla
-                                Handwritten Words Recognition using Convolutional Neural Network</a>
-                        </article>
-                        <article class="pub-card" data-type="conference">
-                            <div class="pub-meta">Sep 2022 · Conference</div>
-                            <a class="pub-title" href="https://dl.gi.de/items/00fb5fba-6008-43a0-bc70-afe876ff7354"
-                               target="_blank">Including Data Management in Research Culture Increases the Reproducibility of
-                                Scientific Results</a>
-                        </article>
-                        <article class="pub-card" data-type="conference">
-                            <div class="pub-meta">Dec 2021 · Conference</div>
-                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/9689823" target="_blank">SSGTA: A
-                                Novel Swap Sequence based Game Theory Algorithm for Traveling Salesman Problem</a>
-                        </article>
-                        <article class="pub-card" data-type="conference">
-                            <div class="pub-meta">Dec 2020 · Conference</div>
-                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/9398041" target="_blank">Efficient
-                                IoT based Weather Station</a>
-                        </article>
-                        <article class="pub-card" data-type="conference">
-                            <div class="pub-meta">Dec 2020 · Conference</div>
-                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/9392687" target="_blank">Performance
-                                Analysis of Three-Phase Inverter for Minimizing Total Harmonic Distortion Using Space Vector
-                                Pulse Width Modulation Technique</a>
-                        </article>
-                        <article class="pub-card" data-type="conference">
-                            <div class="pub-meta">Dec 2020 · Conference</div>
-                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/9350407" target="_blank">Function
-                                Optimization using Evolutionary Game Theory Algorithm</a>
-                        </article>
-                        <article class="pub-card" data-type="conference">
-                            <div class="pub-meta">Dec 2019 · Conference</div>
-                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/9087503" target="_blank">Smart
-                                Security Box using Arduino and GSM Module</a>
-                        </article>
-                        <article class="pub-card" data-type="conference">
-                            <div class="pub-meta">May 2019 · Conference</div>
-                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/8934642" target="_blank">Neural
-                                Network based Software Defect Prediction using Genetic Algorithm and Particle Swarm
-                                Optimization</a>
-                        </article>
-                        <article class="pub-card" data-type="conference">
-                            <div class="pub-meta">Feb 2019 · Conference</div>
-                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/8679221" target="_blank">Spider
-                                Monkey Optimization to Solve Traveling Salesman Problem</a>
-                        </article>
-                        <article class="pub-card" data-type="conference">
-                            <div class="pub-meta">Dec 2018 · Conference</div>
-                            <a class="pub-title" href="https://ieeexplore.ieee.org/document/8660872" target="_blank">Modified
-                                Grey Wolf Optimization to Solve Traveling Salesman Problem</a>
-                        </article>
-
-                        <!-- Posters -->
-                        <article class="pub-card" data-type="poster">
-                            <div class="pub-meta">2025 · Poster</div>
-                            <a class="pub-title" href="https://zenodo.org/records/16736070" target="_blank">Services to Create a
-                                Research Data Management Container (RDMC)</a>
-                        </article>
-                        <article class="pub-card" data-type="poster">
-                            <div class="pub-meta">2025 · Poster</div>
-                            <a class="pub-title" href="https://zenodo.org/records/16735860" target="_blank">Insights from a
-                                Student-Postdoc Tandem for Research Data Management in an Interdisciplinary Collaborative
-                                Research Center</a>
-                        </article>
-
-                        <!-- Demos -->
-                        <article class="pub-card" data-type="demo">
-                            <div class="pub-meta">2024 · Demo</div>
-                            <a class="pub-title" href="https://events.hifis.net/event/1741/contributions/13311/"
-                               target="_blank">NFDIxCS Creating a Research Data Management Container (RDMC)</a>
-                        </article>
-                        <article class="pub-card" data-type="demo">
-                            <div class="pub-meta">2024 · Demo</div>
-                            <a class="pub-title" href="https://events.hifis.net/event/1741/contributions/13916/"
-                               target="_blank">NFDIxCS: Guarantee Levels of the Research Data Management Container (RDMC)</a>
-                        </article>
-
-                        <!-- Reports -->
-                        <article class="pub-card" data-type="report">
-                            <div class="pub-meta">2024 · Report</div>
-                            <a class="pub-title" href="https://zenodo.org/records/15130045" target="_blank">Identification of
-                                core elements for a machine-actionable Data Management Plan metadata schema in the NFDI</a>
-                        </article>
+                    <div class="small text-muted mt-4">
+                        Source: <a href="https://scholar.google.com/citations?user=PUyJ1ZQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
                     </div>
                 </div>
             </section>
@@ -429,7 +573,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="small">Sources: <a href="https://orcid.org/0000-0002-0970-0455" target="_blank"
+                    <div class="small">Sources: <a href="https://orcid.org/0000-0002-0970-0455#cy-peer-reviews" target="_blank"
                                                    rel="noopener noreferrer">ORCiD</a> · <a
                             href="https://www.webofscience.com/wos/author/record/E-6558-2018" target="_blank"
                             rel="noopener noreferrer">Web of Science</a></div>

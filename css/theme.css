@@ -6,7 +6,8 @@
 :root {
   --bg: #ffffff;
   --text: #0f172a; /* slate-900 */
-  --muted: #475569; /* slate-600 */
+  --muted: black; /* slate-600 */
+  --muted1: black; /* slate-600 */
   --primary: #2563eb; /* blue-600 */
   --primary-contrast: #ffffff;
   --card: #f8fafc; /* slate-50 */
@@ -17,7 +18,8 @@
 html[data-theme='dark'] {
   --bg: #0b1220;
   --text: #e5e7eb;
-  --muted: #94a3b8;
+  --muted: white;
+  --muted1: black;
   --primary: #60a5fa;
   --primary-contrast: #0b1220;
   --card: #0f172a;
@@ -63,8 +65,39 @@ a:hover { text-decoration: underline; }
 .pub-card .pub-title { color: var(--text); text-decoration: none; font-size: .92rem; line-height: 1.25; }
 .pub-card .pub-title:hover { text-decoration: underline; }
 
+/* Publications - Serial list layout: Date | Title | Subject | Type */
+.commit-timeline { display: block; }
+.commit-item { display: grid; grid-template-columns: 140px 1fr 120px 120px; gap: .25rem 1rem; align-items: start; padding: .5rem 0; border-bottom: 1px solid var(--border); }
+.commit-item:last-child { border-bottom: none; }
+
+/* Columns */
+.commit-item .commit-date { grid-column: 1; color: var(--muted); font-weight: 600; white-space: nowrap; }
+.commit-item .commit-message { grid-column: 2; color: var(--text); text-decoration: none; }
+.commit-item .commit-message:hover { text-decoration: underline; }
+.commit-item .commit-domain { grid-column: 3; color: var(--muted1);}
+.commit-item .commit-type { grid-column: 4; text-transform: capitalize; color: var(--muted1);}
+.commit-item .commit-meta { display: contents; }
+
+/* Show/Hide for filtering */
+.commit-item.hidden { display: none; }
+
 /* Compact margins so more fit on screen */
 section#publications .resume-section-content { max-width: 1200px; }
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .commit-item { grid-template-columns: 120px 1fr 110px 100px; }
+}
+@media (max-width: 768px) {
+  .commit-item { grid-template-columns: 100px 1fr 1fr; }
+  .commit-item .commit-domain { grid-column: 3; }
+  .commit-item .commit-type { grid-column: 3; justify-self: end; }
+}
+@media (max-width: 520px) {
+  .commit-item { grid-template-columns: 90px 1fr; }
+  .commit-item .commit-domain { grid-column: 2; }
+  .commit-item .commit-type { grid-column: 2; justify-self: start; }
+}
 
 /* On very small screens keep 2 columns if possible */
 @media (max-width: 420px) { .pub-grid { grid-template-columns: repeat(2, 1fr); } }

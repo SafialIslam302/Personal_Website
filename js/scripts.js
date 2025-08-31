@@ -54,32 +54,47 @@ window.addEventListener('DOMContentLoaded', event => {
         if (toggleText) toggleText.textContent = current === 'light' ? 'Dark' : 'Light';
     }
 
-    // Publications: sort by year desc on load, then filter
+    // Publications: dual-scope filtering (type + subject) with no-results message
     const filterButtons = document.querySelectorAll('.pub-filter');
-    const grid = document.querySelector('.pub-grid');
-    const pubs = Array.from(document.querySelectorAll('.pub-card'));
+    const noResultsEl = document.getElementById('pub-no-results');
 
-    // Helper to parse year from meta like "Dec 2022 · Conference" or "2025 · Poster"
-    const getYear = (el) => {
-        const meta = el.querySelector('.pub-meta')?.textContent || '';
-        const m = meta.match(/(20\d{2})/);
-        return m ? parseInt(m[1], 10) : 0;
-    };
+    function applyFilters() {
+        const activeType = document.querySelector('.pub-filter-type.active')?.getAttribute('data-filter') || 'all';
+        const activeSubject = document.querySelector('.pub-filter-subject.active')?.getAttribute('data-filter') || 'all';
 
-    // Sort DOM nodes by year desc
-    pubs.sort((a, b) => getYear(b) - getYear(a)).forEach(el => grid?.appendChild(el));
+        let visibleCount = 0;
+        document.querySelectorAll('.commit-item').forEach(item => {
+            const itemType = item.getAttribute('data-type');
+            const itemDomain = item.getAttribute('data-domain');
 
-    filterButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            const type = btn.getAttribute('data-filter');
-            pubs.forEach(item => {
-                const t = item.getAttribute('data-type');
-                item.style.display = (type === 'all' || t === type) ? '' : 'none';
-            });
+            const matchesType = activeType === 'all' || itemType === activeType;
+            const matchesSubject = activeSubject === 'all' || itemDomain === activeSubject;
+
+            if (matchesType && matchesSubject) {
+                item.classList.remove('hidden');
+                visibleCount++;
+            } else {
+                item.classList.add('hidden');
+            }
+        });
+
+        if (noResultsEl) noResultsEl.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const scope = this.getAttribute('data-scope');
+
+            // Toggle active within the same scope only
+            document.querySelectorAll(`.pub-filter-${scope}`).forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            applyFilters();
         });
     });
+
+    // Apply once on load
+    applyFilters();
 
     // Contact form submission
     const form = document.getElementById('contactForm');
