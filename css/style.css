@@ -1,0 +1,99 @@
+/* Base layout and responsive fixes for mobile */
+
+/* Ensure images and embeds scale */
+img, video, iframe { max-width: 100%; height: auto; }
+
+/* Body spacing under top navbar on small screens */
+@media (max-width: 991.98px) {
+  body { padding-top: 4rem; }
+}
+
+/* Sidebar (desktop left), topbar (mobile) */
+#sideNav {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 17rem; /* classic resume width */
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  #sideNav .navbar-nav {
+    flex-direction: column;
+  }
+  .container-fluid {
+    margin-left: 17rem; /* keep content clear of sidebar */
+  }
+}
+
+/* Sections spacing harmonized */
+.resume-section { padding: 3rem 1rem; }
+@media (min-width: 768px) { .resume-section { padding: 4rem 2rem; } }
+
+/* Profile image tweaks */
+.img-profile { width: 10rem; height: 10rem; object-fit: cover; }
+
+/* Experience interactive layout (left list + right details) */
+.experience-container {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile default */
+  gap: 1rem;
+}
+
+/* Left list of items */
+.experience-left {
+  display: grid;
+  gap: .5rem;
+}
+
+.experience-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: .6rem;
+  padding: .6rem .8rem;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr auto; /* title | date */
+  gap: .25rem .75rem;
+}
+.experience-item .experience-title { font-weight: 600; color: var(--text); }
+.experience-item .experience-date { color: var(--muted); font-size: .9rem; }
+.experience-item.active { outline: 2px solid var(--primary); outline-offset: 0; }
+
+/* Decorative lines/particles hidden on mobile for simplicity */
+.experience-item .connection-line,
+.experience-item .connection-particles { display: none !important; }
+
+/* Right detail cards */
+.experience-right { display: grid; gap: .75rem; }
+.detail-card {
+  display: none; /* only .active visible */
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: .6rem;
+  padding: .9rem 1rem;
+}
+.detail-card.active { display: block; }
+
+/* Two-column layout on md+ screens */
+@media (min-width: 768px) {
+  .experience-container { grid-template-columns: 260px 1fr; }
+  .experience-left { position: sticky; top: 5rem; align-self: start; }
+}
+
+/* Publications controls wrap nicely */
+.btn-group { flex-wrap: wrap; }
+.btn-group .btn { margin-bottom: .25rem; }
+
+/* Tables or long lines should scroll if overflow */
+.responsive-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+/* Prevent long links/email from breaking layout */
+.resume-section a, .resume-section li, .resume-section p { word-break: break-word; overflow-wrap: anywhere; }

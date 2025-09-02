@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ai.zencoder.plugin.chat.index">
-    <option name="activeChatId" value="721aa1ad-0365-4f3e-b603-d2fe8706e79f" />
-    <option name="chatMetadata" value="{&quot;721aa1ad-0365-4f3e-b603-d2fe8706e79f&quot;:{&quot;id&quot;:&quot;721aa1ad-0365-4f3e-b603-d2fe8706e79f&quot;,&quot;title&quot;:&quot;ok now it is good but still the commit-date is ...&quot;,&quot;createdAt&quot;:1756648008066,&quot;updatedAt&quot;:1756648008071,&quot;isAgent&quot;:true,&quot;messageCount&quot;:1,&quot;lastMessagePreview&quot;:&quot;ok now it is good but still the commit-date is between the domain and type, but it will be before th...&quot;}}" />
+    <option name="activeChatId" value="7a7f932b-2aac-4480-a71d-009647dc2f3a" />
+    <option name="chatMetadata" value="{&quot;721aa1ad-0365-4f3e-b603-d2fe8706e79f&quot;:{&quot;id&quot;:&quot;721aa1ad-0365-4f3e-b603-d2fe8706e79f&quot;,&quot;title&quot;:&quot;ok now it is good but still the commit-date is ...&quot;,&quot;createdAt&quot;:1756648008066,&quot;updatedAt&quot;:1756648008071,&quot;isAgent&quot;:true,&quot;isNameGenerated&quot;:true,&quot;messageCount&quot;:1,&quot;lastMessagePreview&quot;:&quot;ok now it is good but still the commit-date is between the domain and type, but it will be before th...&quot;},&quot;7a7f932b-2aac-4480-a71d-009647dc2f3a&quot;:{&quot;id&quot;:&quot;7a7f932b-2aac-4480-a71d-009647dc2f3a&quot;,&quot;title&quot;:&quot;Responsive Design Fixes&quot;,&quot;createdAt&quot;:1756835603839,&quot;updatedAt&quot;:1756835606665,&quot;isAgent&quot;:true,&quot;isNameGenerated&quot;:true,&quot;messageCount&quot;:2,&quot;lastMessagePreview&quot;:&quot;**Fixing responsive design**\n\nI realize we need to address the responsive design issues. First, I'll...&quot;}}" />
   </component>
 </project>
